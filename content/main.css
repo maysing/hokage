@@ -38,37 +38,60 @@ nav {
 nav a {
     color: white;
     text-decoration: none; 
-    font-size: 18px;
+    font-size: 1.6rem;
     font-weight: 100;  
 }
 
 nav a:hover {
-    color: #FF4F00;
+    color: #F20D0D;
 }
 
 .intro {
     text-align: center;
+    margin-top: 12%;
 }
 
-#big-logo {
-    width: 800px;
-    margin-top: 100px;
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 12%;
 }
+
+.button-group a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: color .3s ease;
+}
+
+.button-group a:hover {
+    color: #F20D0D;
+}
+
+.separator {
+    color: rgba(255,255,255,.45);
+    font-size: 2rem;
+    user-select: none;
+}
+
 
 h1 {
-    font-family: "Bpmf Iansui", sans-serif;
+    font-family: "Cormorant Garamond";
     text-align: center;
-    font-size: 48px;
-    margin-top: 150px;
+    font-size: 3rem;
+    font-weight: 400;
     opacity: 0;
     animation: FadeUp 2s ease forwards;
 }
 
 h2 {
-    font-family: "Raleway", sans-serif;
     text-align: center;
-    font-size: 24px;
-    margin-top: 20px;
+    letter-spacing: .08em;
+    font-size: 1.6rem;
     opacity: 0;
     animation: FadeUp 2s ease forwards;
     animation-delay: 1s;
@@ -92,5 +115,73 @@ footer {
     text-align: center;
     padding: 20px 0;
     background: rgba(0,0,0,0.6);
+    font-size: 20px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #F20D0D;
+}
+
+.slide {
+    display: none;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.prev {
+    left: 40px;
+}
+
+.next {
+    right: 40px;
+}
+
+.prev:hover,
+.next:hover {
+    color: #F20D0D;
+}

@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="content/main.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&family=Lexend+Mega:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Passions+Conflict&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hokage</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="content/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&family=Lexend+Mega:wght@100..900&display=swap"
-    rel="stylesheet">
-  <title>Hokage</title>
-</head>
+  <body>
+    <header>
+      <a href="/">
+        <img
+          class="top-logo"
+          src="content/Hokage-logga.svg"
+          alt="Hokage Logo"
+        />
+      </a>
+      <nav>
+        <a href="#" class="openMenu">Meny</a>
+        <a href="">Boka bord</a>
+        <a href="">Kontakt</a>
+      </nav>
+      <div id="menuPopup" class="popup">
+        <span class="close">&times;</span>
 
-<body>
-  <header>
-    <a href="/">
-      <img class="top-logo" src="content/Hokage-logga.svg" alt="Hokage Logo" />
-    </a>
-    <nav>
-      <a href="">MENY</a>
-      <a href="">BOKA BORD</a>
-      <a href="">KONTAKT</a>
-    </nav>
-  </header>
-  <div class="intro">
-    <h1>Shogun är nu Hokage</h1>
-        <h2>Välkommen!</h2>
-  </div>
-  <footer>
-    Hokage 2026 | <a href="mailto:restauranghokage@gmail.com">restauranghokage@gmail.com</a>
-  </footer>
-</body>
+        <button class="prev">&#10094;</button>
 
+        <img class="slide" src="content/1.png" alt="Meny 1" />
+        <img class="slide" src="content/2.png" alt="Meny 2" />
+        <img class="slide" src="content/3.png" alt="Meny 3" />
+        <img class="slide" src="content/4.png" alt="Meny 4" />
+        <img class="slide" src="content/5.png" alt="Meny 5" />
+        <img class="slide" src="content/6.png" alt="Meny 6" />
+
+        <button class="next">&#10095;</button>
+      </div>
+    </header>
+    <div class="intro">
+      <h1>VÄLKOMMEN TILL HOKAGE</h1>
+      <h2>- tidigare Shogun</h2>
+      <div class="button-group">
+        <a href="#" class="btn-book">Boka bord</a>
+    
+        <span class="separator">|</span>
+    
+        <a href="#" class="openMenu" class="btn-menu">Se meny</a>
+    </div>
+    </div>
+    <footer>
+      Hokage 2026 |
+      <a href="mailto:restauranghokage@gmail.com">hokagedining@gmail.com</a>
+    </footer>
+  </body>
 </html>
