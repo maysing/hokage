@@ -5,12 +5,18 @@ const closeBtn = document.querySelector(".close");
 const slides = document.querySelectorAll(".slide");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+const currentSlideNumber = document.getElementById("currentSlide");
+const totalSlides = document.getElementById("totalSlides");
+
+totalSlides.textContent = slides.length;
 
 let currentSlide = 0;
 
 function showSlide(index) {
     slides.forEach(slide => slide.classList.remove("active"));
     slides[index].classList.add("active");
+
+    currentSlideNumber.textContent = index + 1;
 }
 
 showSlide(currentSlide);

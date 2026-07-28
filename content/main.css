@@ -39,7 +39,8 @@ nav a {
     color: white;
     text-decoration: none; 
     font-size: 1.6rem;
-    font-weight: 100;  
+    font-weight: 100;'
+    text-wrap: nowrap;
 }
 
 nav a:hover {
@@ -184,4 +185,197 @@ footer {
 .prev:hover,
 .next:hover {
     color: #F20D0D;
+}
+
+.slide-counter {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-family: "cormorant garamond";
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.8);
+}
+
+
+@media (max-width: 1250px) {
+
+    h1 {
+        font-family: "Cormorant Garamond";
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 400;
+        opacity: 0;
+        animation: FadeUp 2s ease forwards;
+    }
+    
+    h2 {
+        text-align: center;
+        letter-spacing: .08em;
+        font-size: 1.2rem;
+        opacity: 0;
+        animation: FadeUp 2s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .top-logo {
+        width: 500px;
+        margin-top: 60px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+
+    footer {
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .top-logo {
+        width: 400px;
+        margin-top: 60px;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    header {
+        margin-left: -50px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+    
+    .button-group a {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+@media (max-width: 930px) {
+
+
+    .intro {
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 690px) {
+
+    nav {
+        gap: 30px;
+        margin-left: -100px;
+    }
+
+    nav a {
+        margin-top: 50px;
+    }
+
+    .button-group {
+        gap: 30px;
+        margin-top: 12%;
+    }
+
+
+    header {
+        margin-left: -60px;
+        height: 100px;
+    }
+
+    .top-logo {
+        margin-top: 80px;
+    }
+
+    .intro {
+        margin-top: 25%;
+    }
+
+}
+
+
+@media (max-width: 565px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-left: -100px;
+        text-wrap: nowrap;
+    }
+
+    .intro {
+        margin-top: 35%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .top-logo {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    header {
+        margin-left: -50px;
+    }
+
+
+
+
+
+
+}
+
+
+@media (max-width: 565px) {
+
+    header {
+        margin-left: -100px;
+    }
+
+}
+
+
+@media (max-width: 470px) {
+
+    .intro {
+        margin-top: 35%;
+    }
+
 }
