@@ -267,7 +267,6 @@ footer {
 }
 
 
-
 @media (max-width: 930px) {
 
 
@@ -282,6 +281,47 @@ footer {
     
     h2 {
         font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 751px) {
+
+    .popup {
+        padding: 20px;
+    }
+
+    .popup img {
+        width: 100%;
+        max-width: 95vw;
+        max-height: 80vh;
+        object-fit: contain;
+    }
+
+    .prev,
+    .next {
+        font-size: 1.8rem;
+        padding: 8px 12px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .slide-counter {
+        bottom: 15px;
+        right: 20px;
+        font-size: 1rem;
+    }
+
+    .close {
+        top: 15px;
+        right: 20px;
+        font-size: 2rem;
     }
 
 }
@@ -354,10 +394,6 @@ footer {
     header {
         margin-left: -50px;
     }
-
-
-
-
 
 
 }
