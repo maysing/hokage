@@ -33,7 +33,7 @@
       </a>
       <nav>
         <a href="#" class="openMenu">Meny</a>
-        <a href="">Boka bord</a>
+        <a href="#" class="openBooking">Boka bord</a>
         <a href="">Kontakt</a>
       </nav>
       <div id="menuPopup" class="popup">
@@ -48,27 +48,75 @@
         <img class="slide" src="content/5.png" alt="Meny 5" />
         <img class="slide" src="content/6.png" alt="Meny 6" />
 
-
         <button class="next">&#10095;</button>
 
         <div class="slide-counter">
           <span id="currentSlide">1</span> / <span id="totalSlides">6</span>
+        </div>
       </div>
 
-      
+      <div id="bookingPopup" class="popup">
+        <span class="close booking-close">&times;</span>
+
+        <div class="booking-content">
+          <h3>BOKA BORD</h3>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d2d6de98-c22f-44df-be44-9e6f31558826" />
+
+            <input type="hidden" name="subject" value="Ny bokningsförfrågan" />
+
+            <input type="checkbox" name="botcheck" style="display: none" />
+
+            <input type="text" name="name" placeholder="Namn" required />
+
+            <input type="email" name="email" placeholder="E-post" required />
+
+            <input type="tel" name="phone" placeholder="Telefon" required />
+
+            <input type="date" name="date" required />
+
+            <input type="time" name="time" required />
+
+            <input
+              type="number"
+              name="guests"
+              placeholder="Antal personer"
+              min="1"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Meddelande (allergier eller önskemål)"
+            ></textarea>
+
+            <button type="submit">Skicka bokningsförfrågan</button>
+          </form>
+
+          <div id="successMessage" class="success-message">
+            <h3>Tack!</h3>
+            <p>
+                Tack för din bokningsförfrågan!<br>
+                Vi kommer svara dig så snart som möjligt via e-post.
+            </p>
+        </div>
+
+        </div>
       </div>
     </header>
     <div class="intro">
       <h1>VÄLKOMMEN TILL HOKAGE</h1>
       <h2>- tidigare Shogun</h2>
       <div class="button-group">
-        <a href="#" class="btn-book">Boka bord</a>
-    
+        <a href="#" class="btn-book openBooking">Boka bord</a>
+
         <span class="separator">|</span>
-    
-        <a href="#" class="openMenu" class="btn-menu">Se meny</a>
+
+        <a href="#" class="openMenu btn-menu">Se meny</a>
+      </div>
     </div>
-    </div>
+
     <footer>
       Hokage 2026 |
       <a href="mailto:restauranghokage@gmail.com">hokagedining@gmail.com</a>

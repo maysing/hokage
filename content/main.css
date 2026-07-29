@@ -202,6 +202,112 @@ footer a {
 }
 
 
+.booking-content{
+    width:500px;
+    max-width:90vw;
+    background:#111;
+    padding:50px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
+}
+
+.booking-content h3{
+    text-align:center;
+    font-family:"Cormorant Garamond";
+    font-size:2.2rem;
+    font-weight:400;
+    margin-bottom:35px;
+    letter-spacing:.1em;
+}
+
+.booking-content form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.booking-content input,
+.booking-content textarea{
+
+    background:transparent;
+    border:none;
+    border-bottom:1px solid rgba(255,255,255,.25);
+
+    color:white;
+
+    padding:14px 0;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.booking-content input::placeholder,
+.booking-content textarea::placeholder{
+    color:rgba(255,255,255,.45);
+}
+
+.booking-content input:focus,
+.booking-content textarea:focus{
+    border-bottom:1px solid #F20D0D;
+}
+
+.booking-content textarea{
+    resize:none;
+    height:110px;
+}
+
+.booking-content button{
+
+    margin-top:15px;
+
+    padding:16px;
+
+    border:1px solid white;
+
+    background:transparent;
+
+    color:white;
+
+    letter-spacing:.15em;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.booking-content button:hover{
+
+    background:#F20D0D;
+    border-color:#F20D0D;
+
+}
+
+
+.success-message{
+    display:none;
+    text-align:center;
+    padding:40px 10px;
+}
+
+.success-message h3{
+    font-family:"Cormorant Garamond";
+    font-size:2.5rem;
+    font-weight:400;
+    margin-bottom:20px;
+    color: #F20D0D;
+}
+
+.success-message p{
+    font-size:1rem;
+    line-height:1.8;
+    color:rgba(255,255,255,.8);
+}
+
 @media (max-width: 1250px) {
 
     h1 {
@@ -326,6 +432,18 @@ footer a {
         top:20px;
         right:20px;
         font-size:2rem;
+    }
+
+    .booking-content{
+
+        padding:30px 25px;
+    
+    }
+    
+    .booking-content h3{
+    
+        font-size:1.8rem;
+    
     }
 }
 
