@@ -21,6 +21,7 @@ contactButton.forEach((button) => {
   });
 });
 
+
 totalSlides.textContent = slides.length;
 
 let currentSlide = 0;
