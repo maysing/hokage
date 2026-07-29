@@ -1,5 +1,6 @@
 const popup = document.getElementById("menuPopup");
 const openButtons = document.querySelectorAll(".openMenu");
+const contactButton = document.querySelectorAll(".toContact");
 const closeBtn = document.querySelector(".close");
 
 const slides = document.querySelectorAll(".slide");
@@ -7,6 +8,18 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const currentSlideNumber = document.getElementById("currentSlide");
 const totalSlides = document.getElementById("totalSlides");
+
+
+function openContactPage() {
+  window.location.href = "kontakt.html";
+}
+
+contactButton.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    openContactPage();
+  });
+});
 
 totalSlides.textContent = slides.length;
 

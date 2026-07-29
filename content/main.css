@@ -52,6 +52,33 @@ nav a:hover {
     margin-top: 12%;
 }
 
+
+.contact-container {
+    text-align: center;
+    margin-top: 12%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-container a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-container a:hover{
+    color: #F20D0D;
+}
+
+.contact-container p{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#contact-button {
+    color: #F20D0D;
+}
+
 .button-group {
     display: flex;
     justify-content: center;
@@ -342,8 +369,6 @@ footer a {
         font-size: 12px;
     }
 
-
-
 }
 
 
@@ -393,6 +418,20 @@ footer a {
     h2 {
         font-size: 0.8rem;
     }
+
+    .contact-container {
+        margin-top: 15%;
+        max-width: 300px;
+    }
+    
+    .contact-container a{
+        font-size: 16px;
+    }
+    
+    .contact-container p{
+        font-size: 16px;
+    }
+    
 
 }
 
@@ -479,6 +518,20 @@ footer a {
         margin-top: 25%;
     }
 
+    .contact-container {
+        margin-top: 25%;
+    }
+    
+    .contact-container a{
+        font-size: 16px;
+    }
+    
+    .contact-container p{
+        font-size: 16px;
+    }
+    
+    
+
 }
 
 
@@ -500,10 +553,6 @@ footer a {
         font-size: 1.3rem;
     }
 
-    h2 {
-        font-size: 1rem;
-    }
-
     nav a {
         font-size: 1rem;
     }
@@ -514,7 +563,7 @@ footer a {
     }
 
     header {
-        margin-left: -50px;
+        margin-left: -100px;
     }
 
 
@@ -531,24 +580,24 @@ footer a {
         right: -8px;
     }
 
-
-
-}
-
-
-@media (max-width: 565px) {
-
-    header {
-        margin-left: -100px;
+    .contact-container {
+        margin-top: 35%;
     }
 
+
 }
+
+
 
 
 @media (max-width: 470px) {
 
     .intro {
         margin-top: 35%;
+    }
+
+    .contact-container {
+        max-width: 250px;
     }
 
 }
