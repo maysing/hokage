@@ -232,10 +232,12 @@ footer a {
 .booking-content{
     width:500px;
     max-width:90vw;
+    max-height: 80vh;
     background:#111;
     padding:50px;
     border:1px solid rgba(255,255,255,.15);
     border-radius:12px;
+    overflow-y: auto;
 }
 
 .booking-content h3{
