@@ -52,7 +52,6 @@ nav a:hover {
     margin-top: 12%;
 }
 
-
 .contact-container {
     text-align: center;
     margin-top: 12%;
@@ -531,6 +530,13 @@ footer a {
     
     .contact-container p{
         font-size: 16px;
+    }
+    .button-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 20%;
     }
     
     
