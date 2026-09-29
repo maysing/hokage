@@ -1,127 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="content/main.css" />
-    <script src="main.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&family=Lexend+Mega:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Passions+Conflict&display=swap"
-      rel="stylesheet"
-    />
-    <title>Hokage</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="/">
-        <img
-          class="top-logo"
-          src="content/Hokage-logga.svg"
-          alt="Hokage Logo"
-        />
-      </a>
-      <nav>
-        <a href="#" class="openMenu">Meny</a>
-        <a href="#" class="openBooking">Boka bord</a>
-        <a href="#" class="toContact">Kontakt</a>
-      </nav>
-      <div id="menuPopup" class="popup">
-        <span class="close">&times;</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="content/main.css" />
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bpmf+Iansui&family=Lexend+Mega:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Passions+Conflict&display=swap"
+    rel="stylesheet" />
+  <title>Hokage</title>
+</head>
 
-        <button class="prev">&#10094;</button>
-        
-        <img class="slide" src="content/lunch1.png" alt="Meny 5" />
-        <img class="slide" src="content/lunch2.png" alt="Meny 6" />
-        <img class="slide" src="content/1.png" alt="Meny 1" />
-        <img class="slide" src="content/2.png" alt="Meny 2" />
-        <img class="slide" src="content/3.png" alt="Meny 3" />
-        <img class="slide" src="content/6.png" alt="Meny 4" />
-        <img class="slide" src="content/5.png" alt="Meny 7" />
-        <img class="slide" src="content/4.png" alt="Meny 8" />
+<body>
+  <header>
+    <a href="/">
+      <img class="top-logo" src="content/Hokage-logga.svg" alt="Hokage Logo" />
+    </a>
+    <nav>
+      <a href="#" class="openMenu">Meny</a>
+      <a href="#" class="openBooking">Boka bord</a>
+      <a href="#" class="toContact">Kontakt</a>
+    </nav>
+    <div id="menuPopup" class="popup">
+      <span class="close">&times;</span>
 
-        <button class="next">&#10095;</button>
+      <button class="prev">&#10094;</button>
 
-        <div class="slide-counter">
-          <span id="currentSlide">1</span> / <span id="totalSlides">8</span>
-        </div>
-      </div>
+      <img class="slide" src="content/lunch1.png" alt="Meny 5" />
+      <img class="slide" src="content/lunch2.png" alt="Meny 6" />
+      <img class="slide" src="content/1.png" alt="Meny 1" />
+      <img class="slide" src="content/2.png" alt="Meny 2" />
+      <img class="slide" src="content/3.png" alt="Meny 3" />
+      <img class="slide" src="content/6.png" alt="Meny 4" />
+      <img class="slide" src="content/5.png" alt="Meny 7" />
+      <img class="slide" src="content/4.png" alt="Meny 8" />
 
-      <div id="bookingPopup" class="popup">
-        <span class="close booking-close">&times;</span>
+      <button class="next">&#10095;</button>
 
-        <div class="booking-content">
-          <h3>BOKA BORD</h3>
-
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="d2d6de98-c22f-44df-be44-9e6f31558826" />
-
-            <input type="hidden" name="subject" value="Ny bokningsförfrågan" />
-
-            <input type="checkbox" name="botcheck" style="display: none" />
-
-            <input type="text" name="name" placeholder="Namn" required />
-
-            <input type="email" name="email" placeholder="E-post" required />
-
-            <input type="tel" name="phone" placeholder="Telefon" required />
-
-            <input type="date" name="date" required />
-
-            <input type="time" name="time" required />
-
-            <input
-              type="number"
-              name="guests"
-              placeholder="Antal personer"
-              min="1"
-              required
-            />
-
-            <textarea
-              name="message"
-              placeholder="Meddelande (allergier eller önskemål)"
-            ></textarea>
-
-            <button type="submit">Skicka bokningsförfrågan</button>
-          </form>
-
-          <div id="successMessage" class="success-message">
-            <h3>Tack!</h3>
-            <p>
-                Tack för din bokningsförfrågan!<br>
-                Vi kommer svara dig så snart som möjligt via e-post.
-            </p>
-        </div>
-
-        </div>
-      </div>
-    </header>
-    <div class="intro">
-      <h1>VÄLKOMMEN TILL HOKAGE</h1>
-      <h2>- tidigare Shogun</h2>
-      <div class="button-group">
-        <a href="#" class="btn-book openBooking">Boka bord</a>
-
-        <span class="separator">|</span>
-
-        <a href="#" class="openMenu btn-menu">Se meny</a>
+      <div class="slide-counter">
+        <span id="currentSlide">1</span> / <span id="totalSlides">8</span>
       </div>
     </div>
 
-    <footer>
-      Hokage 2026 |
-      <a href="mailto:restauranghokage@gmail.com">hokagedining@gmail.com</a>
-    </footer>
-  </body>
+    <div id="bookingPopup" class="popup">
+      <span class="close booking-close">&times;</span>
+
+      <div class="booking-content">
+        <h3>BOKA BORD</h3>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d2d6de98-c22f-44df-be44-9e6f31558826" />
+
+          <input type="hidden" name="subject" value="Ny bokningsförfrågan" />
+
+          <input type="checkbox" name="botcheck" style="display: none" />
+
+          <input type="text" name="name" placeholder="Namn" required />
+
+          <input type="email" name="email" placeholder="E-post" required />
+
+          <input type="tel" name="phone" placeholder="Telefon" required />
+
+          <input type="date" name="date" required />
+
+          <input type="time" name="time" required />
+
+          <input type="number" name="guests" placeholder="Antal personer" min="1" required />
+
+          <textarea name="message" placeholder="Meddelande (allergier eller önskemål)"></textarea>
+
+          <div class="h-captcha" data-captcha="true"></div>
+
+          <button type="submit">Skicka bokningsförfrågan</button>
+        </form>
+
+        <div id="successMessage" class="success-message">
+          <h3>Tack!</h3>
+          <p>
+            Tack för din bokningsförfrågan!<br>
+            Vi kommer svara dig så snart som möjligt via e-post.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <div class="intro">
+    <h1>VÄLKOMMEN TILL HOKAGE</h1>
+    <h2>- tidigare Shogun</h2>
+    <div class="button-group">
+      <a href="#" class="btn-book openBooking">Boka bord</a>
+
+      <span class="separator">|</span>
+
+      <a href="#" class="openMenu btn-menu">Se meny</a>
+    </div>
+  </div>
+
+  <footer>
+    Hokage 2026 |
+    <a href="mailto:restauranghokage@gmail.com">hokagedining@gmail.com</a>
+  </footer>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
 </html>

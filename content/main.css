@@ -7,9 +7,9 @@
 body {
     margin: 0;
     background:
-        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url("../content/bakgrund2.jpg");
-        
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,9 +37,9 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1.6rem;
-    font-weight: 100;'
+    font-weight: 100;
     text-wrap: nowrap;
 }
 
@@ -60,16 +60,16 @@ nav a:hover {
     margin-right: auto;
 }
 
-.contact-container a{
+.contact-container a {
     font-size: 20px;
     text-decoration: none;
 }
 
-.contact-container a:hover{
+.contact-container a:hover {
     color: #F20D0D;
 }
 
-.contact-container p{
+.contact-container p {
     font-size: 20px;
     text-decoration: none;
 }
@@ -100,7 +100,7 @@ nav a:hover {
 }
 
 .separator {
-    color: rgba(255,255,255,.45);
+    color: rgba(255, 255, 255, .45);
     font-size: 2rem;
     user-select: none;
 }
@@ -129,6 +129,7 @@ h2 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -141,7 +142,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     font-size: 20px;
 }
 
@@ -153,7 +154,7 @@ footer a {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -164,7 +165,7 @@ footer a {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
 .close {
@@ -225,116 +226,116 @@ footer a {
     font-family: "cormorant garamond";
     font-size: 1rem;
     letter-spacing: 2px;
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
 
 
-.booking-content{
-    width:500px;
-    max-width:90vw;
+.booking-content {
+    width: 500px;
+    max-width: 90vw;
     max-height: 80vh;
-    background:#111;
-    padding:50px;
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:12px;
+    background: #111;
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 12px;
     overflow-y: auto;
 }
 
-.booking-content h3{
-    text-align:center;
-    font-family:"Cormorant Garamond";
-    font-size:2.2rem;
-    font-weight:400;
-    margin-bottom:35px;
-    letter-spacing:.1em;
+.booking-content h3 {
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 35px;
+    letter-spacing: .1em;
 }
 
-.booking-content form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.booking-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .booking-content input,
-.booking-content textarea{
+.booking-content textarea {
 
-    background:transparent;
-    border:none;
-    border-bottom:1px solid rgba(255,255,255,.25);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
 
-    color:white;
+    color: white;
 
-    padding:14px 0;
+    padding: 14px 0;
 
-    font-size:1rem;
+    font-size: 1rem;
 
-    outline:none;
+    outline: none;
 
-    transition:.3s;
+    transition: .3s;
 
 }
 
 .booking-content input::placeholder,
-.booking-content textarea::placeholder{
-    color:rgba(255,255,255,.45);
+.booking-content textarea::placeholder {
+    color: rgba(255, 255, 255, .45);
 }
 
 .booking-content input:focus,
-.booking-content textarea:focus{
-    border-bottom:1px solid #F20D0D;
+.booking-content textarea:focus {
+    border-bottom: 1px solid #F20D0D;
 }
 
-.booking-content textarea{
-    resize:none;
-    height:110px;
+.booking-content textarea {
+    resize: none;
+    height: 110px;
 }
 
-.booking-content button{
+.booking-content button {
 
-    margin-top:15px;
+    margin-top: 15px;
 
-    padding:16px;
+    padding: 16px;
 
-    border:1px solid white;
+    border: 1px solid white;
 
-    background:transparent;
+    background: transparent;
 
-    color:white;
+    color: white;
 
-    letter-spacing:.15em;
+    letter-spacing: .15em;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    transition:.3s;
-
-}
-
-.booking-content button:hover{
-
-    background:#F20D0D;
-    border-color:#F20D0D;
+    transition: .3s;
 
 }
 
+.booking-content button:hover {
 
-.success-message{
-    display:none;
-    text-align:center;
-    padding:40px 10px;
+    background: #F20D0D;
+    border-color: #F20D0D;
+
 }
 
-.success-message h3{
-    font-family:"Cormorant Garamond";
-    font-size:2.5rem;
-    font-weight:400;
-    margin-bottom:20px;
+
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.success-message h3 {
+    font-family: "Cormorant Garamond";
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
     color: #F20D0D;
 }
 
-.success-message p{
-    font-size:1rem;
-    line-height:1.8;
-    color:rgba(255,255,255,.8);
+.success-message p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .8);
 }
 
 @media (max-width: 1250px) {
@@ -347,7 +348,7 @@ footer a {
         opacity: 0;
         animation: FadeUp 2s ease forwards;
     }
-    
+
     h2 {
         text-align: center;
         letter-spacing: .08em;
@@ -380,7 +381,7 @@ footer a {
         width: 400px;
         margin-top: 60px;
     }
-    
+
     nav a {
         font-size: 1.2rem;
     }
@@ -392,14 +393,20 @@ footer a {
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1rem;
     }
-    
+
     .button-group a {
         font-size: 1rem;
     }
+
+     .button-group {
+        gap: 30px;
+        margin-top: 4%;
+    }
+
 
 }
 
@@ -416,7 +423,7 @@ footer a {
     h1 {
         font-size: 1.8rem;
     }
-    
+
     h2 {
         font-size: 0.8rem;
     }
@@ -425,67 +432,85 @@ footer a {
         margin-top: 15%;
         max-width: 300px;
     }
-    
-    .contact-container a{
+
+    .contact-container a {
         font-size: 16px;
     }
-    
-    .contact-container p{
+
+    .contact-container p {
         font-size: 16px;
     }
-    
+
+    .button-group {
+        gap: 30px;
+        margin-top: 4%;
+    }
+
+
 
 }
 
 
-@media (max-width:751px){
+@media (max-width:751px) {
 
-    .popup{
-        padding:20px;
+    .popup {
+        padding: 20px;
     }
 
-    .popup img{
-        width:100%;
-        max-width:95vw;
-        max-height:75vh;
-        object-fit:contain;
+    .popup img {
+        width: 100%;
+        max-width: 95vw;
+        max-height: 75vh;
+        object-fit: contain;
     }
 
-    .menu-controls{
-        width:100%;
-        margin-top:15px;
+    .menu-controls {
+        width: 100%;
+        margin-top: 15px;
 
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .prev,
-    .next{
-        font-size:2rem;
+    .next {
+        font-size: 2rem;
     }
 
-    .slide-counter{
-        font-size:1rem;
+    .slide-counter {
+        font-size: 1rem;
     }
 
-    .close{
-        top:20px;
-        right:20px;
-        font-size:2rem;
+    .close {
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
     }
 
-    .booking-content{
+    .booking-content {
 
-        padding:30px 25px;
-    
+        padding: 30px 25px;
+
     }
-    
-    .booking-content h3{
-    
-        font-size:1.8rem;
-    
+
+    .booking-content h3 {
+
+        font-size: 1.8rem;
+
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .button-group {
+        gap: 30px;
+        margin-top: 4%;
+    }
+
+
+
 }
 
 
@@ -503,7 +528,7 @@ footer a {
 
     .button-group {
         gap: 30px;
-        margin-top: 12%;
+        margin-top: 0;
     }
 
 
@@ -523,14 +548,15 @@ footer a {
     .contact-container {
         margin-top: 25%;
     }
-    
-    .contact-container a{
+
+    .contact-container a {
         font-size: 16px;
     }
-    
-    .contact-container p{
+
+    .contact-container p {
         font-size: 16px;
     }
+
     .button-group {
         display: flex;
         justify-content: center;
@@ -538,8 +564,8 @@ footer a {
         gap: 50px;
         margin-top: 20%;
     }
-    
-    
+
+
 
 }
 
@@ -576,9 +602,9 @@ footer a {
     }
 
 
-    .popup img{
-        max-width:85vw;
-        max-height:65vh;
+    .popup img {
+        max-width: 85vw;
+        max-height: 65vh;
     }
 
     .prev {
