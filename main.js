@@ -114,3 +114,17 @@ form.addEventListener("submit", async function (e) {
     document.getElementById("successMessage").style.display = "block";
   }
 });
+
+const dateInput = document.getElementById("booking-date");
+
+if (dateInput) {
+  dateInput.addEventListener("change", function () {
+    const selectedDate = new Date(this.value + "T00:00:00");
+
+    if (selectedDate.getDay() === 0) {
+      alert("Vi tar inte emot bokningar på söndagar.");
+      this.value = "";
+    }
+  });
+}
+
