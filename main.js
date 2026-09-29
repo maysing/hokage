@@ -122,7 +122,7 @@ if (dateInput) {
     const selectedDate = new Date(this.value + "T00:00:00");
 
     if (selectedDate.getDay() === 0) {
-      alert("Vi tar inte emot bokningar på söndagar.");
+      alert("Vi har stängt på söndagar. Vänligen välj ett annat datum.");
       this.value = "";
     }
   });
