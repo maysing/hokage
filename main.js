@@ -157,12 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Vanliga middagstider: 17:00–22:00
-    for (let hour = 17; hour <= 22; hour++) {
+    for (let hour = 17; hour <= 21; hour++) {
       times.push(
         String(hour).padStart(2, "0") + ":00"
       );
 
-      if (hour < 22) {
+      if (hour < 21) {
         times.push(
           String(hour).padStart(2, "0") + ":30"
         );
