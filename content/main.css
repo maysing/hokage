@@ -83,7 +83,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 12%;
 }
 
 .button-group a {
@@ -109,7 +108,7 @@ nav a:hover {
 h1 {
     font-family: "Cormorant Garamond";
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 400;
     opacity: 0;
     animation: FadeUp 2s ease forwards;
@@ -118,10 +117,11 @@ h1 {
 h2 {
     text-align: center;
     letter-spacing: .08em;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     opacity: 0;
     animation: FadeUp 2s ease forwards;
     animation-delay: 1s;
+    margin-bottom: 20px;
 }
 
 @keyframes FadeUp {
@@ -337,6 +337,35 @@ footer a {
     line-height: 1.8;
     color: rgba(255, 255, 255, .8);
 }
+
+
+#booking-time {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0;
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #555;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  cursor: pointer;
+  appearance: auto;
+}
+
+#booking-time:focus {
+  border-bottom-color: #fff;
+}
+
+#booking-time option {
+  background-color: #111;
+  color: #fff;
+}
+
 
 @media (max-width: 1250px) {
 

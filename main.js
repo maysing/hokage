@@ -128,3 +128,58 @@ if (dateInput) {
   });
 }
 
+//Tidsbokning
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("booking-date");
+  const timeSelect = document.getElementById("booking-time");
+
+  if (!dateInput || !timeSelect) return;
+
+  function updateBookingTimes() {
+    const selectedDate = dateInput.value;
+
+    timeSelect.innerHTML = '<option value="">Välj en tid</option>';
+
+    if (!selectedDate) return;
+
+    // 0 = söndag, 6 = lördag
+    const dayOfWeek = new Date(
+      selectedDate + "T12:00:00"
+    ).getDay();
+
+    const times = [];
+
+    // Lördag: Dim Sum Brunch
+    if (dayOfWeek === 6) {
+      times.push("12:00", "14:30");
+    }
+
+    // Vanliga middagstider: 17:00–22:00
+    for (let hour = 17; hour <= 22; hour++) {
+      times.push(
+        String(hour).padStart(2, "0") + ":00"
+      );
+
+      if (hour < 22) {
+        times.push(
+          String(hour).padStart(2, "0") + ":30"
+        );
+      }
+    }
+
+    times.forEach(function (time) {
+      const option = document.createElement("option");
+      option.value = time;
+      option.textContent = time;
+      timeSelect.appendChild(option);
+    });
+  }
+
+  dateInput.addEventListener("change", updateBookingTimes);
+
+  updateBookingTimes();
+});
+
+
