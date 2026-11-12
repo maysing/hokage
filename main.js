@@ -183,3 +183,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// CAMPAIGN POPUP
+const campaignPopup = document.getElementById("campaignPopup");
+const openCampaign = document.querySelector(".openCampaign");
+const campaignClose = campaignPopup.querySelector(".campaign-close");
+
+openCampaign.addEventListener("click", (e) => {
+  e.preventDefault();
+  campaignPopup.style.display = "flex";
+});
+
+campaignClose.addEventListener("click", () => {
+  campaignPopup.style.display = "none";
+});
+
+campaignPopup.addEventListener("click", (e) => {
+  if (e.target === campaignPopup) {
+    campaignPopup.style.display = "none";
+  }
+});
+
